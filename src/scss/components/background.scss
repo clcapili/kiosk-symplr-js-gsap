@@ -1,0 +1,51 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+.background-1 {
+    background-image: url('../img/general/bg-pattern-large-left.png'), url('../img/general/bg-pattern-large-right.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+}
+
+.background-2 {
+    background-image: url('../img/general/bg-pattern-circles.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.background-3 {
+    background-image: url('../img/general/bg-pattern-small-left-purple.png'), url('../img/general/bg-pattern-small-right-purple.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+}
+
+.background-4 {
+    background-image: url('../img/general/bg-pattern-small-left-green.png'), url('../img/general/bg-pattern-small-right-green.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left, right;
+}
+
+.background-platform {
+    background: radial-gradient(112.78% 70.71% at 50% 50%, #160030 0%, #210A1E 100%);
+}
+
+.background-platform-1 {
+    background-image: url('../img/platform/bg-pattern-platform-left.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left;
+    z-index: initial;
+}
+
+.background-platform-2 {
+    background-image: url('../img/platform/bg-pattern-platform-right.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right;
+    z-index: initial;
+}

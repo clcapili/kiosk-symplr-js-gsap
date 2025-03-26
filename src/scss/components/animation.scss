@@ -1,0 +1,8 @@
+@keyframes bubbleChangeColor {
+    0%, 33%, 100% {
+        background: $black;
+    }
+    16.5%, 50% {
+        background: radial-gradient(272.26% 275.27% at 13.47% -4.17%, #5D77F6 0.5%, #6100D7 34%, #000 43.75%, #5D77F6 45.24%);
+    }
+}

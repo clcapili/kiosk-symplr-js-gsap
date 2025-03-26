@@ -1,0 +1,75 @@
+.copy {
+    padding: 24px;
+    background-color: rgba($gray-900, .5);
+
+    h2 {
+        margin-bottom: 24px;
+    }
+}
+
+.text-box {
+    h1 {
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+    
+    ol li {
+        margin-bottom: 16px;
+    }
+}
+
+.platform-copy {
+    .copy-header {
+        width: 590px;
+        margin-bottom: 48px;
+
+        h1 {
+            margin-bottom: 24px;
+        }
+    }
+}
+
+div[data-name="platform-diagram-copy"] {
+    h2 {
+        margin-bottom: 24px;
+    }
+}
+
+.solution-copy {
+    .copy-header {
+        width: 500px;
+        margin-bottom: 90px;
+
+        h1 {
+            margin-bottom: 32px;
+        }
+    }
+
+    .copy-list {
+        ul.hex-list {
+            li {
+                position: relative;
+                margin-bottom: 16px;
+                padding-left: 45px;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 33px;
+                    height: 34px;
+                    background: url('../img/platform/hex-list.svg');
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+
+                &.item-gradient:before {
+                    background: url('../img/platform/hex-list-gradient.svg');
+                }
+            }
+        }
+    }
+}

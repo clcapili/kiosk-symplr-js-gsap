@@ -1,0 +1,63 @@
+<div class="element element-absolute" data-name="platform-product-copy" style="--width: 600px; --height: 100vh; top: 0; right: 15%;">
+    <?php include 'access-copy.php' ?>
+    <?php include 'assessment-copy.php' ?>
+    <?php include 'clinical-communications-copy.php' ?>
+    <?php include 'compliance-copy.php' ?>
+    <?php include 'contingent-talent-management-copy.php' ?>
+    <?php include 'contract-copy.php' ?>
+    <?php include 'courseware-copy.php' ?>
+    <?php include 'hiring-copy.php' ?>
+    <?php include 'learning-copy.php' ?>
+    <?php include 'midas-care-management-copy.php' ?>
+    <?php include 'midas-datavision-copy.php' ?>
+    <?php include 'midas-statit-copy.php' ?>
+    <?php include 'network-provider-management-cvo-copy.php' ?>
+    <?php include 'network-provider-management-directory-copy.php' ?>
+    <?php include 'network-provider-management-evidence-analysis-copy.php' ?>
+    <?php include 'payer-copy.php' ?>
+    <?php include 'performance-copy.php' ?>
+    <?php include 'physician-scheduling-copy.php' ?>
+    <?php include 'provider-copy.php' ?>
+    <?php include 'provider-data-management-cvo-copy.php' ?>
+    <?php include 'provider-data-management-directory-copy.php' ?>
+    <?php include 'quality-review-copy.php' ?>
+    <?php include 'recruiting-copy.php' ?>
+    <?php include 'safety-copy.php' ?>
+    <?php include 'spend-analysis-copy.php' ?>
+    <?php include 'spend-management-evidence-analysis-copy.php' ?>
+    <?php include 'talent-sourcing-copy.php' ?>
+    <?php include 'value-analysis-copy.php' ?>
+    <?php include 'workforce-copy.php' ?>
+</div>
+
+<div class="element element-absolute" data-name="platform-product-title" style="--width: 440px; --height: 110px; top: 60px; left: 60px;">
+    <?php include 'access-title.php' ?>
+    <?php include 'assessment-title.php' ?>
+    <?php include 'clinical-communications-title.php' ?>
+    <?php include 'compliance-title.php' ?>
+    <?php include 'contingent-talent-management-title.php' ?>
+    <?php include 'contract-title.php' ?>
+    <?php include 'courseware-title.php' ?>
+    <?php include 'hiring-title.php' ?>
+    <?php include 'learning-title.php' ?>
+    <?php include 'midas-care-management-title.php' ?>
+    <?php include 'midas-datavision-title.php' ?>
+    <?php include 'midas-statit-title.php' ?>
+    <?php include 'network-provider-management-cvo-title.php' ?>
+    <?php include 'network-provider-management-directory-title.php' ?>
+    <?php include 'network-provider-management-evidence-analysis-title.php' ?>
+    <?php include 'payer-title.php' ?>
+    <?php include 'performance-title.php' ?>
+    <?php include 'physician-scheduling-title.php' ?>
+    <?php include 'provider-title.php' ?>
+    <?php include 'provider-data-management-cvo-title.php' ?>
+    <?php include 'provider-data-management-directory-title.php' ?>
+    <?php include 'quality-review-title.php' ?>
+    <?php include 'recruiting-title.php' ?>
+    <?php include 'safety-title.php' ?>
+    <?php include 'spend-analysis-title.php' ?>
+    <?php include 'spend-management-evidence-analysis-title.php' ?>
+    <?php include 'talent-sourcing-title.php' ?>
+    <?php include 'value-analysis-title.php' ?>
+    <?php include 'workforce-title.php' ?>
+</div>

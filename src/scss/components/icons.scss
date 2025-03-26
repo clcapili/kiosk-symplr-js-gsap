@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'icon';
+  src:  url('../fonts/icons.eot?snala7');
+  src:  url('../fonts/icons.eot?snala7#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?snala7') format('truetype'),
+    url('../fonts/icons.woff?snala7') format('woff'),
+    url('../fonts/icons.svg?snala7#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-left:before {
+  content: "\e900";
+}
+.icon-menu:before {
+  content: "\e901";
+}
+.icon-menu-collapse:before {
+  content: "\e902";
+}
+.icon-x:before {
+  content: "\e903";
+}
+.icon-zoom-in:before {
+  content: "\e904";
+}
+.icon-arrow-right:before {
+  content: "\e905";
+}
+.icon-light-bulb:before {
+  content: "\e906";
+}
+.icon-technology:before {
+  content: "\e907";
+}
+.icon-gear:before {
+  content: "\e908";
+}
+.icon-platform:before {
+  content: "\e909";
+}
+.icon-chart:before {
+  content: "\e90a";
+}
+.icon-document:before {
+  content: "\e90b";
+}
+.icon-info:before {
+  content: "\e90c";
+}
+.icon-profile:before {
+  content: "\e90d";
+}
+.icon-chart-up:before {
+  content: "\e90e";
+}
+.icon-product-symplr-payer:before {
+  content: "\e90f";
+}
+.icon-product-symplr-evidence-analysis:before {
+  content: "\e910";
+}
+.icon-product-symplr-compliance:before {
+  content: "\e911";
+}
+.icon-product-symplr-contract:before {
+  content: "\e912";
+}
+.icon-product-symplr-acccess:before {
+  content: "\e913";
+}
+.icon-product-symplr-spend-analysis:before {
+  content: "\e914";
+}
+.icon-product-symplr-value-analysis:before {
+  content: "\e915";
+}
+.icon-product-courseware:before {
+  content: "\e916";
+}
+.icon-product-symplr-hiring:before {
+  content: "\e917";
+}
+.icon-product-symplr-learning:before {
+  content: "\e918";
+}
+.icon-product-symplr-performance:before {
+  content: "\e919";
+}
+.icon-product-symplr-assessments:before {
+  content: "\e91a";
+}
+.icon-product-symplr-talent-sourcing:before {
+  content: "\e91b";
+}
+.icon-product-symplr-recruiting:before {
+  content: "\e91c";
+}
+.icon-product-contingent-talent-management:before {
+  content: "\e91d";
+}
+.icon-product-symplr-workforce:before {
+  content: "\e91e";
+}
+.icon-product-symplr-clinical-communications:before {
+  content: "\e91f";
+}
+.icon-product-symplr-physician-scheduling:before {
+  content: "\e920";
+}
+.icon-product-quality-review:before {
+  content: "\e921";
+}
+.icon-product-symplr-safety:before {
+  content: "\e922";
+}
+.icon-product-midas-statit:before {
+  content: "\e923";
+}
+.icon-product-midas-datavision:before {
+  content: "\e924";
+}
+.icon-product-midas-care-management:before {
+  content: "\e925";
+}
+.icon-product-symplr-cvo:before {
+  content: "\e926";
+}
+.icon-product-symplr-directory:before {
+  content: "\e927";
+}
+.icon-product-symplr-provider:before {
+  content: "\e928";
+}
+.icon-solution-workforce-management:before {
+  content: "\e929";
+}
+.icon-solution-access-management:before {
+  content: "\e92a";
+}
+.icon-solution-contract-management:before {
+  content: "\e92b";
+}
+.icon-solution-spend-management:before {
+  content: "\e92c";
+}
+.icon-solution-talent-management:before {
+  content: "\e92d";
+}
+.icon-profile-shield:before {
+  content: "\e92e";
+}
+.icon-solution-compliance:before {
+  content: "\e92f";
+}
+.icon-solution-communication-and-physician-scheduling:before {
+  content: "\e930";
+}
+.icon-solution-provider-data-management:before {
+  content: "\e931";
+}
+.icon-solution-quality-and-safety:before {
+  content: "\e932";
+}

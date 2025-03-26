@@ -1,0 +1,313 @@
+.shape {
+    --size: 350px;
+    --hex-ratio: .866;
+    --border-size: 2px;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    color: $white;
+}
+
+
+.shape-body {
+    padding: 40px;
+}
+
+.shape-hexagon {
+    align-items: center;
+    justify-content: center;
+
+    width: calc(var(--size) * var(--hex-ratio));
+    height: calc(var(--size) * var(--hex-ratio));
+
+    background-color: $white;
+
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+}
+
+.shape-hexagon-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: var(--border-size); /* equal to border thickness */
+    left: var(--border-size); /* equal to border thickness */
+
+    width: calc( var(--size) * var(--hex-ratio) - (var(--border-size)*2) );
+    height: calc( var(--size) * var(--hex-ratio) - (var(--border-size)*2) );
+
+    -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+}
+
+.shape-hexagon-sm {
+    z-index: 1;
+    
+    width: 56px;
+    height: 56px;
+
+    background-color: $green-light;
+
+    box-sizing: border-box;
+    -webkit-clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+    clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+}
+
+.shape-sphere {
+    align-items: center;
+    justify-content: center;
+
+    width: var(--size);
+    height: var(--size);
+
+    border: var(--border-size) solid $white;
+    background: #2B2A2F;
+    border-radius: 100%;
+    padding: 30px;
+
+    &.shape-sphere-black {
+        background: $black;
+        border: none;
+        text-align: center;
+        overflow: hidden;
+    
+        .shape-body {
+            padding: 0;
+            z-index: 901;
+
+            .icon.icon-arrow-right {
+                position: absolute;
+                left: 46%;
+                bottom: 48px;
+                font-size: 2rem;
+            }
+        }
+
+        .shape-sphere-black-bg {
+            position: absolute;
+            top: 0; 
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('../img/general/bubble-gradient-purple.svg');
+            z-index: 900;
+            opacity: 0;
+        }
+
+        small {
+            display: block;
+            margin-bottom: 24px;
+        }
+
+        &.active {
+            background: radial-gradient(272.26% 275.27% at 13.47% -4.17%, #5D77F6 0.5%, #6100D7 34%, #000 43.75%, #5D77F6 45.24%);
+        }
+    }
+}
+
+.shape-rectangle {
+    align-items: center;
+    justify-content: center;
+
+    width: var(--size);
+
+    border: var(--border-size) solid $white;
+    border-radius: 40px;
+
+    .shape-body {
+        padding: 64px;
+
+        h2 {
+            margin-bottom: 32px;
+        }
+
+        p {
+            margin-bottom: 40px;
+        }
+    }
+    
+}
+
+.shape-hexagon-outline-bg {
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.shape-hexagon-dark {
+    position: absolute;
+    z-index: 1;
+    width: 256px;
+    height: 256px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+        color: $purple;
+
+        &.non-highlighted {
+            svg {
+                fill: $gray-600;
+            }
+        }
+
+        svg {
+            fill: $white;
+            stroke-width: 0;
+        }
+    }
+
+    svg {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+
+        fill: $gray-900;
+        stroke: $purple;
+        stroke-width: 3;
+    }
+}
+
+.shape-erp {
+    text-align: center;
+
+    p {
+        margin-top: 16px;
+        margin-bottom: 0;
+    }
+}
+
+.shape-caption {
+    width: var(--size);
+    text-align: center;
+    margin-top: 32px;
+}
+
+
+.shape-tiles {
+    .shape-tile {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // small
+        &.shape-tile-sm-1 {
+            top: 7%;
+            right: 48%;
+        }
+
+        &.shape-tile-sm-2 {
+            top: 20%;
+            right: 60%;
+        }
+
+        &.shape-tile-sm-3 {
+            top: 43%;
+            right: 35%;
+        }
+
+        &.shape-tile-sm-4 {
+            top: 56%;
+            left: 27%;
+        }
+
+        &.shape-tile-sm-5 {
+            top: 81%;
+            right: 48%;
+        }
+
+        // medium
+        &.shape-tile-md-1 {
+            top: 15%;
+            right: 31%;
+        }
+
+        &.shape-tile-md-2 {
+            top: 65%;
+            left: 37%;
+        }
+
+        &.shape-tile-md-3 {
+            top: 65.3%;
+            right: 32%;
+        }
+
+        // large
+        &.shape-tile-lg-1 {
+            top: 27%;
+            left: 47%;
+
+            .tile-text {
+                div {
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+
+        &.shape-tile-lg-2 {
+            top: 41%;
+            right: 56%;
+        }
+
+        &.shape-tile-lg-3 {
+            top: 50%;
+            left: 47%; 
+        }
+
+        .tile-text {
+            position: relative;
+            z-index: 3;
+            font-weight: 700;
+            margin-bottom: 0;
+            text-align: center;
+
+            div {
+                display: block;
+                font-size: 4.5rem;
+                line-height: 1;
+
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+
+        svg {
+            position: absolute;
+            z-index: 2;
+        }
+    }
+}
+
+
+/* toggle colors for bubbles */
+.product-bubbles.active {
+   //background: radial-gradient(272.26% 275.27% at 13.47% -4.17%, #5D77F6 0.5%, #6100D7 34%, #000 43.75%, #5D77F6 45.24%);
+
+    .element {
+        .shape-sphere {
+            animation: bubbleChangeColor 1s infinite;
+            animation-delay: 1s;
+        }
+
+        &:nth-of-type(1) .shape-sphere {
+            animation-delay: 0;
+        }
+        &:nth-of-type(2) .shape-sphere {
+            animation-delay: 2s;
+        }
+        &:nth-of-type(3) .shape-sphere {
+            animation-delay: 4s;
+        }
+    }
+
+}

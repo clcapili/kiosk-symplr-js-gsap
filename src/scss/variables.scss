@@ -1,0 +1,49 @@
+// grays
+$white:     #fff;
+$gray-100:  #F8F9FA;
+$gray-200:  #E9ECEF;
+$gray-300:  #D9D9D9;
+$gray-400:  #CED4DA;
+$gray-500:  #AFBBC4;
+$gray-600:  #7D7D7D;
+$gray-700:  #59595B;
+$gray-800:  #343636;
+$gray-900:  #222124;
+$black:     #000;
+
+// colors
+// purple
+$purple:        #6100D7;
+$purple-dark:   #270057;
+$purple-light:  #5D77F6;
+$purple-tint:   #554169;
+
+// green
+$green-light:   #BCF66F;
+
+// orange
+$orange-light:  #FAE864;
+
+// body
+$body-color:  $white;
+$body-bg:     $gray-900;
+
+$container-padding-x: 120px;
+
+// typography
+// fonts
+$font-family-sans-serif:      'Sofia Sans', sans-serif;
+$font-weight-base:            300;
+
+$lead-font-weight: 300;
+
+// cards
+$card-spacer-y:                     3rem;
+$card-spacer-x:                     3rem;
+$card-title-spacer-y:               1.5rem;
+$card-title-color:                  $white;
+$card-border-width:                 0;
+$card-border-radius:                16px;
+$card-box-shadow:                   none;
+$card-color:                        $white;
+$card-bg:                           rgba(255, 255, 255, 0.05);

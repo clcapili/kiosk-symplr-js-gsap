@@ -1,0 +1,181 @@
+.transition {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1090;
+
+    .transition-video {
+        position: absolute;
+    }
+}
+
+.transition-pattern {
+    --hexagon-size: 86px;
+    --gap: 12px;
+    --color: $purple;
+    --duration: 1.5s;
+
+    top: -50px;
+    left: -15px;
+    align-items: flex-start;
+   
+    &.show-ripple {
+        .hexagon {
+            
+            animation: ripple var(--duration) ease-in;
+            animation-duration: max(
+                var(--duration),
+                calc(var(--duration) * var(--ripple-factor) / 100)
+            );
+            animation-delay: calc(var(--ripple-factor) * 8ms);
+        
+            &:after {
+                color: #fff;
+            }
+        
+        }
+    }
+
+    .column {
+        display: grid;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 63px;
+        
+        &:nth-child(odd) {
+            margin-top: 80px;
+            margin-left: -40px;
+        }
+        
+        &:nth-child(even) {
+            margin-left: -40px;
+        }
+    }
+
+    .hexagon {
+        width: var(--hexagon-size);
+        height: 98px;
+        position: relative;
+        background: var(--color);
+        transition: background 0.25s ease;
+        overflow: hidden;
+        clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+        opacity: 0;
+    }
+
+}
+
+
+@property --index {
+    syntax: "<number>";
+    initial-value: 0;
+    inherits: true;
+}
+  
+@property --ripple-factor {
+    syntax: "<number>";
+    initial-value: 0;
+    inherits: true;
+}
+
+@keyframes ripple {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(.95);
+        opacity: 0.80;
+    }
+
+
+    50% {
+        transform: scale(max(0.8, calc(var(--ripple-factor) / 100)));
+        opacity: 0.42;
+    }
+  /*
+    65% {
+        opacity: 1;
+        background: var(--color);
+    }
+ 
+    70% {
+        transform: scale(1.5);
+        background: var(--color);
+    }
+  */ 
+    to {
+        opacity: 1;
+        transform: scale(1);
+        
+    }
+}
+
+
+@keyframes morph {
+    from {
+        clip-path: polygon(
+            0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 0% 25%, 
+            0% 75%, 0% 75%, 0% 75%, 0% 75%, 0% 75%, 0% 75%, 0% 75%, 
+            50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 50% 100%, 
+            100% 75%, 100% 75%, 100% 75%, 100% 75%, 100% 75%, 100% 75%, 100% 75%, 
+            100% 25%, 100% 25%, 100% 25%, 100% 25%, 100% 25%, 100% 25%, 100% 25%,
+            50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%, 50% 0%
+        );
+    }
+
+    to {
+        clip-path: polygon(
+                10.35898% 21.33975%,
+                8.93111% 22.33956%, 
+                7.69854% 23.57212%, 
+                6.69873% 25%,
+                5.96206% 26.5798%, 
+                5.51091% 28.26352%, 
+                5.35898% 30%, 
+                            
+                5.35898% 70%, 
+                5.51091% 71.73648%, 
+                5.96206% 73.4202%, 
+                6.69873% 75%, 
+                7.69854% 76.42788%, 
+                8.93111% 77.66044%, 
+                10.35898% 78.66025%, 
+                            
+                45% 92.66025%, 
+                46.5798% 93.39693%, 
+                48.26352% 93.84808%, 
+                50% 94%, 
+                51.73648% 93.84808%, 
+                53.4202% 93.39693%, 
+                55% 92.66025%, 
+                            
+                89.64102% 78.66025%, 
+                91.06889% 77.66044%, 
+                92.30146% 76.42788%, 
+                93.30127% 75%, 
+                94.03794% 73.4202%, 
+                94.48909% 71.73648%, 
+                94.64102% 70%, 
+                            
+                94.64102% 30%, 
+                94.48909% 28.26352%, 
+                94.03794% 26.5798%, 
+                93.30127% 25%, 
+                92.30146% 23.57212%, 
+                91.06889% 22.33956%, 
+                89.64102% 21.33975%, 
+                
+                55% 1.33975%,
+                53.4202% 0.60307%, 
+                51.73648% 0.15192%, 
+                50% 0%,
+                48.26352% 0.15192%,
+                46.5798% 0.60307%, 
+                45% 1.33975%
+            );
+
+    }
+}

@@ -1,0 +1,14 @@
+.tooltip {
+    display: flex;
+    
+    .icon {
+        font-size: 2rem;
+        color: $orange-light;
+        margin-right: 8px;
+    }
+
+    .tooltip-title {
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+}

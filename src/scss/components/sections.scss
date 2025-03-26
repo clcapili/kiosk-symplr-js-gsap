@@ -1,0 +1,227 @@
+// supply chain
+.section-supply-chain {
+    .shape-tiles {
+        .shape-tile {
+            // small
+            &.shape-tile-sm-1 {
+                top: 7%;
+                right: 28%;
+            }
+    
+            &.shape-tile-sm-2 {
+                top: 19%;
+                right: 40.5%;
+            }
+    
+            &.shape-tile-sm-3 {
+                top: 46%;
+                right: 15%;
+            }
+    
+            &.shape-tile-sm-4 {
+                top: 56%;
+                right: 33%;
+            }
+    
+            &.shape-tile-sm-5 {
+                top: 82%;
+                right: 28%;
+            }
+    
+            // medium
+            &.shape-tile-md-1 {
+                top: 15%;
+                right: 14%;
+            }
+    
+            &.shape-tile-md-2 {
+                top: 68%;
+                right: 18%;
+            }
+    
+            &.shape-tile-md-3 {
+                top: 65.3%;
+                right: 13%;
+            }
+    
+            // large
+            &.shape-tile-lg-1 {
+                top: 25%;
+                right: 3.5%;
+            }
+    
+            &.shape-tile-lg-2 {
+                top: 39%;
+                right: 37%;
+            }
+    
+            &.shape-tile-lg-3 {
+                top: 52%;
+                right: 4%; 
+            }
+        }
+    }
+}
+
+// platform technology
+body[data-current-scene^="platform-technology"] {
+    .solution-hexagon {
+        pointer-events: none;
+    }
+    .platform-technology-tag {
+        pointer-events: none;
+    }
+}
+
+// platform solution copy
+.solution-copy { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; opacity: 0; transition: visibility 0s, opacity .5s linear; }
+body[data-current-scene="platform-solution-workforce"] .solution-workforce-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-communication-physician-scheduling"] .solution-communication-physician-scheduling-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-compliance"] .solution-compliance-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-contract-management"] .solution-contract-management-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-network-provider-management"] .solution-network-provider-management-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-provider-data-management"] .solution-provider-data-management-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-quality-safety"] .solution-quality-safety-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-spend-management"] .solution-spend-management-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-access"] .solution-access-copy { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-talent"] .solution-talent-copy { visibility: visible; opacity: 1; }
+
+// platform solution title
+.solution-title { position: absolute; top: 0; left: 0; visibility: hidden; opacity: 0; transition: visibility 0s, opacity .5s linear; }
+body[data-current-scene="platform-solution-workforce"] .solution-workforce-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-communication-physician-scheduling"] .solution-communication-physician-scheduling-title {visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-compliance"] .solution-compliance-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-contract-management"] .solution-contract-management-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-network-provider-management"] .solution-network-provider-management-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-provider-data-management"] .solution-provider-data-management-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-quality-safety"] .solution-quality-safety-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-spend-management"] .solution-spend-management-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-access"] .solution-access-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-solution-talent"] .solution-talent-title { visibility: visible; opacity: 1; }
+
+// platform product copy
+.product-copy { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 720px; opacity: 0; transition: visibility 0s, opacity .5s linear; }
+body[data-current-scene="platform-product-access"] .product-access-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-assessment"] .product-assessment-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-clinical-communications"] .product-clinical-communications-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-compliance"] .product-compliance-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-contingent-talent-management"] .product-contingent-talent-management-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-contract"] .product-contract-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-courseware"] .product-courseware-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-hiring"] .product-hiring-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-learning"] .product-learning-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-midas-care-management"] .product-midas-care-management-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-midas-datavision"] .product-midas-datavision-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-midas-statit"] .product-midas-statit-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-network-provider-management-cvo"] .product-network-provider-management-cvo-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-network-provider-management-directory"] .product-network-provider-management-directory-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-network-provider-management-evidence-analysis"] .product-network-provider-management-evidence-analysis-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-payer"] .product-payer-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-performance"] .product-performance-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-physician-scheduling"] .product-physician-scheduling-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-provider"] .product-provider-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-provider-data-management-cvo"] .product-provider-data-management-cvo-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-provider-data-management-directory"] .product-provider-data-management-directory-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-quality-review"] .product-quality-review-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-recruiting"] .product-recruiting-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-safety"] .product-safety-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-spend-analysis"] .product-spend-analysis-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-spend-management-evidence-analysis"] .product-spend-management-evidence-analysis-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-talent-sourcing"] .product-talent-sourcing-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-value-analysis"] .product-value-analysis-copy { visibility: visible; opacity: 1; z-index: 9; }
+body[data-current-scene="platform-product-workforce"] .product-workforce-copy { visibility: visible; opacity: 1; z-index: 9; }
+
+
+// platform product title
+.product-title { position: absolute; top: 0; left: 0; visibility: hidden; opacity: 0; transition: visibility 0s, opacity .5s linear; }
+body[data-current-scene="platform-product-access"] .product-access-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-assessment"] .product-assessment-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-clinical-communications"] .product-clinical-communications-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-compliance"] .product-compliance-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-contingent-talent-management"] .product-contingent-talent-management-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-contract"] .product-contract-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-courseware"] .product-courseware-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-hiring"] .product-hiring-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-learning"] .product-learning-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-midas-care-management"] .product-midas-care-management-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-midas-datavision"] .product-midas-datavision-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-midas-statit"] .product-midas-statit-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-network-provider-management-cvo"] .product-network-provider-management-cvo-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-network-provider-management-directory"] .product-network-provider-management-directory-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-network-provider-management-evidence-analysis"] .product-network-provider-management-evidence-analysis-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-payer"] .product-payer-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-performance"] .product-performance-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-physician-scheduling"] .product-physician-scheduling-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-provider"] .product-provider-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-provider-data-management-cvo"] .product-provider-data-management-cvo-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-provider-data-management-directory"] .product-provider-data-management-directory-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-quality-review"] .product-quality-review-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-recruiting"] .product-recruiting-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-safety"] .product-safety-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-spend-analysis"] .product-spend-analysis-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-spend-management-evidence-analysis"] .product-spend-management-evidence-analysis-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-talent-sourcing"] .product-talent-sourcing-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-value-analysis"] .product-value-analysis-title { visibility: visible; opacity: 1; }
+body[data-current-scene="platform-product-workforce"] .product-workforce-title { visibility: visible; opacity: 1; }
+
+// platform product shapes
+.solution-product {
+    transition: opacity .25s ease-in-out;
+}
+body[data-current-scene^="platform-product"] {
+    .solution-product {
+        opacity: 0 !important;
+        pointer-events: none;
+    }
+}
+body[data-current-scene="platform-product-workforce"] [data-name="platform-product-workforce"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-contingent-talent-management"] [data-name="platform-product-contingent-talent-management"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-recruiting"] [data-name="platform-product-recruiting"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-talent-sourcing"] [data-name="platform-product-talent-sourcing"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-learning"] [data-name="platform-product-learning"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-performance"] [data-name="platform-product-performance"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-assessment"] [data-name="platform-product-assessment"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-hiring"] [data-name="platform-product-hiring"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-courseware"] [data-name="platform-product-courseware"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-compliance"] [data-name="platform-product-compliance"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-provider"] [data-name="platform-product-provider"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-provider-data-management-directory"] [data-name="platform-product-provider-data-management-directory"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-provider-data-management-cvo"] [data-name="platform-product-provider-data-management-cvo"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-midas-care-management"] [data-name="platform-product-midas-care-management"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-midas-datavision"] [data-name="platform-product-midas-datavision"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-midas-statit"] [data-name="platform-product-midas-statit"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-safety"] [data-name="platform-product-safety"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-quality-review"] [data-name="platform-product-quality-review"] { opacity: 1 !important;  }
+body[data-current-scene="platform-product-physician-scheduling"] [data-name="platform-product-physician-scheduling"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-clinical-communications"] [data-name="platform-product-clinical-communications"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-value-analysis"] [data-name="platform-product-value-analysis"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-spend-analysis"] [data-name="platform-product-spend-analysis"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-spend-management-evidence-analysis"] [data-name="platform-product-spend-management-evidence-analysis"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-contract"] [data-name="platform-product-contract"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-access"] [data-name="platform-product-access"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-network-provider-management-evidence-analysis"] [data-name="platform-product-network-provider-management-evidence-analysis"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-payer"] [data-name="platform-product-payer"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-network-provider-management-directory"] [data-name="platform-product-network-provider-management-directory"] { opacity: 1 !important; }
+body[data-current-scene="platform-product-network-provider-management-cvo"] [data-name="platform-product-network-provider-management-cvo"] { opacity: 1 !important; }
+
+
+.section-platform {
+    .navigation-bar {
+        background: radial-gradient(100% 67.71% at 50% 100%, #100024 16.5%, rgba(24, 0, 54, 0.76) 44.75%, rgba(24, 0, 54, 0.51) 73%, rgba(20, 0, 44, 0.00) 100%);
+        
+        .navigation-bar-links .nav-link {
+            .icon {
+                background-color: $purple-tint;
+                border: 1px solid rgba(255, 255, 255, 0.25);
+            }
+
+            &.active .icon,
+            &.force-active .icon {
+                color: $black;
+                background-color: $white;
+                border-color: $white;
+            }
+        }
+    }
+   
+}

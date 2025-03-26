@@ -1,0 +1,3 @@
+<div class="element element-absolute background background-platform" data-name="platform-background" style="display: none; opacity: 0;"></div>
+<div class="element element-absolute background background-platform-1" data-name="platform-background-1" style="display: none; opacity: 0;"></div>
+<div class="element element-absolute background background-platform-2" data-name="platform-background-2" style="display: none; opacity: 0;"></div>
